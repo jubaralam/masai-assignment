@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    #logout{
+        visibility: hidden;
+  
+     
+    }
+  
+  </style>
+</head>
+<body>
+  <h1>This example demonstrates how we can change text content when clicking on button</h1>
+  <hr>
+  <h1 id="display">Click on Login to continue</h1>
+  <button id="login" onClick="login()">Login</button>
+  <button id="logout" onClick="logout()">Logout</button>
+</body>
+</html>
+<script>
+    let logInChange = document.getElementById("display")
+
+    let logIn = document.getElementById("login");
+    let logOut = document.getElementById("logout")
+    
+  function login() {
+    //complete this function
+    logInChange.innerText = " Login Success";
+    logOut.style.visibility = "visible";
+    logIn.style.visibility = "hidden"
+    
+    
+}
+
+function logout() {
+    //complete this function
+    logInChange.innerText = "Logout Success"
+    logOut.style.visibility = "hidden";
+    logIn.style.visibility = "visible"
+  }
+</script>

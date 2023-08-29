@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+<style>
+    body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .mar{
+     margin: 10px;
+     padding: 5px 10px; 
+     border: 1px solid #ddd;  
+     border-radius: 5px;
+     font-size: 2rem;
+    }
+</style>
+</head>
+<body>
+    
+    <input type="text" id="input" placeholder="Enter Your Name Here" class="mar">
+    <button onclick="show()" id="btn" class="mar">Submit</button>
+
+    <script>
+        let input = document.getElementById("input")
+        function show(){
+            alert("Entered Name Is:- "+input.value)
+            input.value = ""
+        }
+    </script>
+</body>
+</html>
